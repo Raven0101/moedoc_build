@@ -1,0 +1,110 @@
+.dialog-container-wrapper {
+  height: 100%;
+  width: 100%;
+}
+.chat-container-robot {
+  width: 650rpx;
+  display: flex;
+  padding: 20rpx;
+}
+.chat-container-user {
+  width: 650rpx;
+  display: flex;
+  padding: 20rpx;
+  justify-content: flex-end;
+  float: right;
+}
+.chat-text {
+  display: flex;
+  width: 500rpx;
+  .chat-pointer {
+    height: 0rpx;
+    width: 0rpx;
+    margin-top: 20rpx;
+    &.left {
+      border-top: 20rpx solid transparent;
+      border-bottom: 20rpx solid transparent;
+      border-left: 20rpx solid transparent;
+      border-right: 20rpx solid #fff;
+    }
+    &.right {
+      border-top: 20rpx solid transparent;
+      border-bottom: 20rpx solid transparent;
+      border-left: 20rpx solid #fff;
+      border-right: 20rpx solid transparent;
+    }
+  }
+  .chat-text-area {
+    width: 100%;
+    background-color: #fff;
+    padding: 20rpx;
+    border-radius: 10rpx;
+    .chat-text-title {
+      font-weight: 500;
+    }
+    .chat-text-divide {
+      height: 10rpx;
+      width: 100%;
+      margin-bottom: 10rpx;
+      border-bottom: 1px solid #ccc;
+    }
+  }
+}
+.chat-head-img {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 35rpx;
+}
+.dialog-container {
+  width: 100%;
+  height: 100%;
+}
+.dialog-scroll-view {
+  height: calc(100vh - 120rpx);
+  width: 100%;
+  //   padding: 25rpx;
+  background: #eeeeee;
+}
+.dialog-input-bar {
+  position: absolute;
+  bottom: 0px;
+  min-height: 120rpx;
+  //   padding-top: 20rpx;
+  //   padding-bottom: 20rpx;
+  width: 100%;
+  background: #fff;
+  border-top: #ccc 1rpx solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .input-operation-icon {
+    height: 60rpx;
+    width: 60rpx;
+    &.left {
+      margin-left: 40rpx;
+    }
+    &.mid {
+      margin-left: 20rpx;
+    }
+    &.right {
+      margin-right: 40rpx;
+    }
+  }
+  .dialog-input {
+    width: 540rpx;
+    min-height: 70rpx;
+    margin: 0rpx 20rpx 0rpx 20rpx;
+    padding: 0rpx 15rpx 0rpx 15rpx;
+    border: #ccc 1px solid;
+    border-radius: 30rpx;
+    background: #e6e6e6;
+    display: flex;
+    align-items: center;
+    .dialog-input-textarea {
+      width: 100%;
+    }
+  }
+  .dialog-input-placeholder {
+    line-height: 1.5;
+  }
+}
